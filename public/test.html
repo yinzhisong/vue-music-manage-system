@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body id="body">
+    
+	</body>
+</html>
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 3000px;
+  background-color: pink;
+}
+</style>
+<script type="text/jscript">
+  var body = document.getElementById("body");
+  body.onscroll = function (){
+    console.log(document.documentElement.scrollTop || document.body.scrollTop);
+  }
+</script>
