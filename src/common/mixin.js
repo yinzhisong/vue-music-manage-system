@@ -10,5 +10,8 @@ export const saveScrollTopMixin = {
   },
   deactivated (){
     this.scrollTop = this.$refs.scroll.scrollTop;
+  },
+  destroyed (){
+    this.scrollTop = 0;
   }
 }

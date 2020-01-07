@@ -3,7 +3,7 @@
     <v-header></v-header>
     <v-sidebar></v-sidebar>
     <div class="home-content-box" :class="{'home-content-collapse': collapse}">
-      <v-tags @setTags="setTags"></v-tags>
+      <v-tags @setTagsList="setTagsList"></v-tags>
       <div class="home-content" ref="homeContent">
         <transition name="move" mode="out-in">
           <keep-alive :include="tagsList">
@@ -38,12 +38,13 @@ export default {
   },
   methods: {
     // 设置 keep-alive 保存的路由数组
-    setTags (tags){
+    setTagsList (tags){
       let arr = [];
       for (let i=0, len=tags.length; i<len; i++){
         tags[i].name && arr.push(tags[i].name);
       }
       this.tagsList = arr;
+      console.log(arr);
     }
   }
 }

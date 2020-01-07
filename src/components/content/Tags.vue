@@ -27,7 +27,7 @@
 
 <script>
 import {mapGetters, mapMutations} from 'vuex';
-  
+
 export default {
   name: 'Tags',
   data (){
@@ -68,7 +68,7 @@ export default {
         });
       }
       
-      this.$emit('setTags', this.tags);
+      this.$emit('setTagsList', this.tags);
     },
     
     // 关闭标签
@@ -100,10 +100,12 @@ export default {
         return item.path == this.$route.fullPath;
       });
       this.tags = curItem; // 返回找到的选项, 重新赋值给数组
+      this.$emit('setTagsList', this.tags);
     },
     closeAll (){
       this.tags = [];
       this.$router.push('/');
+      this.$emit('setTagsList', this.tags);
     }
   },
   computed: {
