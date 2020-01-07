@@ -102,32 +102,111 @@ export default {
       ] */
       items: [
         {
-            icon: 'el-icon-lx-home',
+            icon: 'el-icon-s-home',
             index: '/home/dashboard',
             title: '系统首页'
         },{
-          icon: 'el-icon-lx-calendar',
-          index: '/home/singer',
-          title: '音乐'
+          icon: 'el-icon-s-data',
+          index: '2',
+          title: '音乐',
+					subs: [
+						{
+							index: '/home/song/recommend',
+							title: '推荐'
+						},
+						{
+							index: '/home/song/chinese',
+							title: '华语'
+						},
+						{
+							index: '/home/song/europe',
+							title: '欧美'
+						},
+						{
+							index: '/home/song/korea',
+							title: '韩国'
+						},
+						{
+							index: '/home/song/japan',
+							title: '日本'
+						},
+						{
+							index: '/home/song/all',
+							title: '全部音乐'
+						}
+					]
         },{
-          icon: 'el-icon-lx-calendar',
-          index: '/home/singer',
-          title: '歌手'
+          icon: 'el-icon-s-custom',
+          index: '3',
+          title: '歌手',
+					subs: [
+						{
+							index: '/home/singer/chinese',
+							title: '华语'
+						},
+						{
+							index: '/home/singer/europe',
+							title: '欧美'
+						},
+						{
+							index: '/home/singer/korea',
+							title: '韩国'
+						},
+						{
+							index: '/home/singer/japan',
+							title: '日本'
+						},
+						{
+							index: '/home/singer/other',
+							title: '其他'
+						},
+						{
+							index: '/home/singer/men',
+							title: '男'
+						},
+						{
+							index: '/home/singer/women',
+							title: '女'
+						},
+						{
+							index: '/home/singer/band',
+							title: '乐队/组合'
+						}
+					]
         },{
-            icon: 'el-icon-lx-cascades',
+            icon: 'el-icon-s-order',
             index: '4',
             title: '歌单',
             subs: [
               {
-                index: '/home/allsonglist',
-                title: '全部歌单'
+                index: '/home/songlist/recommend',
+                title: '推荐'
               },{
-                
-              }
+                index: '/home/songlist/official',
+								title: '官方'
+              },{
+								index: '/home/songlist/chinese',
+								title: '华语'
+							},{
+								index: '/home/songlist/popular',
+								title: '流行'
+							},{
+								index: '/home/songlist/ballad',
+								title: '民谣'
+							},{
+								index: '/home/songlist/electronic',
+								title: '电子'
+							},{
+								index: '/home/songlist/light',
+								title: '轻音乐'
+							},{
+								index: '/home/songlist/all',
+								title: '全部歌单'
+							}
             ]
         },
         {
-          icon: 'el-icon-lx-calendar',
+          icon: 'el-icon-user-solid',
           index: '/home/user',
           title: '用户'
         }
