@@ -59,46 +59,78 @@ export default {
   name: 'Sidebar',
   data (){
     return {
+      /* items: [
+        {
+            icon: 'el-icon-lx-home',
+            index: '/home/dashboard',
+            title: '系统首页'
+        },
+        {
+            icon: 'el-icon-lx-cascades',
+            index: '/home/table',
+            title: '基础表格'
+        },
+        {
+          icon: 'el-icon-lx-calendar',
+          index: '3',
+          title: '表单相关',
+          subs: [
+            {
+              index: '/home/form',
+              title: '基本表单'
+            },
+            {
+              index: '3-2',
+              title: '三级菜单',
+              subs: [
+                {
+                    index: '/home/editor',
+                    title: '富文本编辑器'
+                },
+                {
+                    index: '/home/markdown',
+                    title: 'markdown编辑器'
+                }
+              ]
+            },
+            {
+              index: '/home/upload',
+              title: '文件上传'
+            }
+          ]
+        }
+      ] */
       items: [
-          {
-              icon: 'el-icon-lx-home',
-              index: '/home/dashboard',
-              title: '系统首页'
-          },
-          {
-              icon: 'el-icon-lx-cascades',
-              index: '/home/table',
-              title: '基础表格'
-          },
-          {
-            icon: 'el-icon-lx-calendar',
-            index: '3',
-            title: '表单相关',
+        {
+            icon: 'el-icon-lx-home',
+            index: '/home/dashboard',
+            title: '系统首页'
+        },{
+          icon: 'el-icon-lx-calendar',
+          index: '/home/singer',
+          title: '音乐'
+        },{
+          icon: 'el-icon-lx-calendar',
+          index: '/home/singer',
+          title: '歌手'
+        },{
+            icon: 'el-icon-lx-cascades',
+            index: '4',
+            title: '歌单',
             subs: [
               {
-                index: '/home/form',
-                title: '基本表单'
-              },
-              {
-                index: '3-2',
-                title: '三级菜单',
-                subs: [
-                  {
-                      index: '/home/editor',
-                      title: '富文本编辑器'
-                  },
-                  {
-                      index: '/home/markdown',
-                      title: 'markdown编辑器'
-                  }
-                ]
-              },
-              {
-                index: '/home/upload',
-                title: '文件上传'
+                index: '/home/allsonglist',
+                title: '全部歌单'
+              },{
+                
               }
             ]
-          }
+        },
+        {
+          icon: 'el-icon-lx-calendar',
+          index: '/home/user',
+          title: '用户'
+        }
       ]
     }
   },
