@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-main" ref="scroll">
     <input type="text" key="table" />
     <div v-for="i in 400">
       table
@@ -8,9 +8,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'basetable'
-  }
+import {saveScrollTopMixin} from '@/common/mixin.js';
+export default {
+  name: 'basetable',
+  mixins: [saveScrollTopMixin],
+  components: {
+  },
+}
 </script>
 
 <style>

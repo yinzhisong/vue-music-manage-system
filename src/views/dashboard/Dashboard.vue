@@ -1,41 +1,29 @@
 <template>
-  <div class="dashboard" ref="da">
-    <input type="text" key="dasheboard" />
-    <div v-for="i in 100">
+  <div class="home-main" ref="scroll">
+    <button >按钮</button>
+    <div v-for="i in 98">
       {{i}}
     </div>
   </div>
 </template>
 
 <script>
+import {saveScrollTopMixin} from '@/common/mixin.js';
 export default {
   name: 'dashboard',
   data (){
     return {
-      scrollTop: 0,
     }
   },
-  mounted (){
-    //console.log(this.$refs.da);
-    /* window.addEventListener('scroll', () => {
-      console.log("aaa");
-      //console.log(this.$refs.sc.scrollTop);
-    }, false); */
+  mixins: [saveScrollTopMixin],
+  components: {
   },
-  methods: {
-    sc (){
-      console.log("sc");
-    }
-  },
-  activated (){
-    //console.log(this.scrollTop);
-    console.log("进入");
+  /* activated (){
+    this.$refs.dashboard.scrollTo(0, this.scrollTop, true);
   },
   deactivated (){
-    console.log("离开");
-    console.log(this.$refs.da.pageYOffset);
-    //this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  }
+    this.scrollTop = this.$refs.dashboard.scrollTop;
+  } */
 }
 </script>
 

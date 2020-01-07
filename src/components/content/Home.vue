@@ -4,7 +4,7 @@
     <v-sidebar></v-sidebar>
     <div class="home-content-box" :class="{'home-content-collapse': collapse}">
       <v-tags @setTags="setTags"></v-tags>
-      <div class="home-content">
+      <div class="home-content" ref="homeContent">
         <transition name="move" mode="out-in">
           <keep-alive :include="tagsList">
             <router-view></router-view>
@@ -25,7 +25,6 @@ import Tags from '@/components/content/Tags.vue';
 export default {
   data (){
     return {
-      //tags: []
       tagsList: []
     }
   },
@@ -33,6 +32,9 @@ export default {
     'v-header': Header,
     'v-sidebar': Sidebar,
     'v-tags': Tags
+  },
+  computed: {
+    ...mapGetters(['collapse', 'tags']),
   },
   methods: {
     // 设置 keep-alive 保存的路由数组
@@ -43,12 +45,6 @@ export default {
       }
       this.tagsList = arr;
     }
-  },
-  computed: {
-    ...mapGetters(['collapse', 'tags']),
-  },
-  watch: {
-    
   }
 }
 </script>
@@ -70,12 +66,16 @@ export default {
   transition: left 0.3s ease-in-out;
   background-color: #f0f0f0;
 }
-.home-content {
+/* .home-content {
   width: auto;
   height: 100%;
   padding: 10px;
   overflow-y: scroll;
   box-sizing: border-box;
+} */
+.home-content {
+  width: auto;
+  height: 100%;
 }
 .home-content-collapse {
   left: 65px;

@@ -1,8 +1,13 @@
-html, body, #app {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+<template>
+  <div class="home-main">
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+</script>
+
+<style>
 .home-main {
   position: relative;
   height: 100%;
@@ -10,3 +15,4 @@ html, body, #app {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+</style>
