@@ -44,7 +44,6 @@ export default {
         tags[i].name && arr.push(tags[i].name);
       }
       this.tagsList = arr;
-      console.log(arr);
     }
   }
 }

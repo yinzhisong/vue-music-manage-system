@@ -112,23 +112,23 @@ export default {
 					subs: [
 						{
 							index: '/home/song/recommend',
-							title: '推荐'
+							title: '推荐音乐'
 						},
 						{
 							index: '/home/song/chinese',
-							title: '华语'
+							title: '华语音乐'
 						},
 						{
 							index: '/home/song/europe',
-							title: '欧美'
+							title: '欧美音乐'
 						},
 						{
 							index: '/home/song/korea',
-							title: '韩国'
+							title: '韩语音乐'
 						},
 						{
 							index: '/home/song/japan',
-							title: '日本'
+							title: '日语音乐'
 						},
 						{
 							index: '/home/song/all',
@@ -142,31 +142,31 @@ export default {
 					subs: [
 						{
 							index: '/home/singer/chinese',
-							title: '华语'
+							title: '华语歌手'
 						},
 						{
 							index: '/home/singer/europe',
-							title: '欧美'
+							title: '欧美歌手'
 						},
 						{
 							index: '/home/singer/korea',
-							title: '韩国'
+							title: '韩国歌手'
 						},
 						{
 							index: '/home/singer/japan',
-							title: '日本'
+							title: '日本歌手'
 						},
 						{
 							index: '/home/singer/other',
-							title: '其他'
+							title: '其他歌手'
 						},
 						{
 							index: '/home/singer/men',
-							title: '男'
+							title: '男歌手'
 						},
 						{
 							index: '/home/singer/women',
-							title: '女'
+							title: '女歌手'
 						},
 						{
 							index: '/home/singer/band',
@@ -180,25 +180,25 @@ export default {
             subs: [
               {
                 index: '/home/songlist/recommend',
-                title: '推荐'
+                title: '推荐歌单'
               },{
                 index: '/home/songlist/official',
-								title: '官方'
+								title: '官方歌单'
               },{
 								index: '/home/songlist/chinese',
-								title: '华语'
+								title: '华语歌单'
 							},{
 								index: '/home/songlist/popular',
-								title: '流行'
+								title: '流行歌单'
 							},{
 								index: '/home/songlist/ballad',
-								title: '民谣'
+								title: '民谣歌单'
 							},{
 								index: '/home/songlist/electronic',
-								title: '电子'
+								title: '电子歌单'
 							},{
 								index: '/home/songlist/light',
-								title: '轻音乐'
+								title: '轻音乐歌单'
 							},{
 								index: '/home/songlist/all',
 								title: '全部歌单'
